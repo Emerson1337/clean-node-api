@@ -1,0 +1,3 @@
+{
+  "pluginSearchDirs": ["eslint-config-standard-typescript-prettier/prettier"]
+}
