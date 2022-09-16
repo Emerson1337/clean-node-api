@@ -2,7 +2,6 @@ import { HttpRequest, HttpResponse } from './protocols/http';
 
 export class SignUpController {
 	handle(httpRequest: HttpRequest): HttpResponse {
-		const a;
 		if (!httpRequest.body.name) {
 			return {
 				statusCode: 400,
