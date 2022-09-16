@@ -1,12 +1,10 @@
 {
   "parserOptions": {
     "project": "./tsconfig.json",
-    "ecmaVersion": "latest"
+    "ecmaVersion": "latest",
+    "sourceType": "module"
   },
-  "extends": [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended"
-  ],
+  "parser": "@typescript-eslint/parser",
   "rules": {
     "@typescript-eslint/no-explicit-any": "off",
     "indent": [
@@ -23,5 +21,8 @@
         "error",
         "always"
     ]
+  },
+  "env": {
+    "jest": true
   }
 }
