@@ -6,7 +6,7 @@ import {
 	EmailValidator,
 	Controller,
 	AddAccount,
-} from './SignUpProtocols';
+} from './Protocols/SignUpProtocols';
 
 export class SignUpController implements Controller {
 	private readonly emailValidator: EmailValidator;

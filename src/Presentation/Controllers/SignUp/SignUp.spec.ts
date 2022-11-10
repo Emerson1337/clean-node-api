@@ -9,7 +9,7 @@ import {
 	AddAccount,
 	AddAccountModel,
 	AccountModel,
-} from './SignUpProtocols';
+} from './Protocols/SignUpProtocols';
 
 interface SutTypes {
 	sut: SignUpController;

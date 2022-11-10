@@ -3,7 +3,7 @@ import {
 	AddAccountModel,
 	AccountModel,
 	AddAccountRepository,
-} from './DbAddAccountProtocols';
+} from './Protocols/DbAddAccountProtocols';
 import { DbAddAccount } from './DbAddAccount';
 
 interface SutTypes {
