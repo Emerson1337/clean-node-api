@@ -6,6 +6,7 @@
 		"@types/jest": "29.0.2",
 		"@types/mongodb": "^4.0.7",
 		"@types/node": "18.7.18",
+		"@types/supertest": "^2.0.12",
 		"@types/validator": "^13.7.8",
 		"@typescript-eslint/eslint-plugin": "5.37.0",
 		"@typescript-eslint/parser": "^5.37.0",
@@ -17,12 +18,13 @@
 		"husky": "^8.0.1",
 		"jest": "28.0.0",
 		"lint-staged": "^13.0.3",
+		"supertest": "^6.3.1",
 		"ts-jest": "^28.0.8",
 		"ts-node": "^10.9.1",
 		"typescript": "4.8.3"
 	},
 	"scripts": {
-		"dev": "ts-node src/Main/server.ts",
+		"dev": "ts-node src/Main/Server.ts",
 		"test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
 		"test:verbose": "jest --passWithNoTests",
 		"test:unit": "yarn test -- --watch -c jest-unit-config.js",
