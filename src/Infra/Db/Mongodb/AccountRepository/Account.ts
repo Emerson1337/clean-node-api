@@ -1,4 +1,3 @@
-import { WithId, Document } from 'mongodb';
 import { AddAccountRepository } from '../../../../Data/Protocols/AddAccountRepository';
 import { AccountModel } from '../../../../Domain/Models';
 import { AddAccountModel } from '../../../../Domain/UseCases';
