@@ -1,4 +1,14 @@
 {
+  "env": {
+      "browser": true,
+      "es2021": true,
+      "jest": true
+  },
+  "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended"
+  ],
   "parserOptions": {
     "project": "./tsconfig.json",
     "ecmaVersion": "latest",
@@ -20,9 +30,7 @@
     "semi": [
         "error",
         "always"
-    ]
-  },
-  "env": {
-    "jest": true
+    ],
+    "no-unused-vars": 2
   }
 }
