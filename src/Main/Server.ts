@@ -1,6 +1,4 @@
-import express from 'express';
-
-const app = express();
+import app from './Config/App';
 
 app.listen(3333, () => {
 	console.log(
