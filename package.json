@@ -27,10 +27,10 @@
 		"dev": "ts-node src/Main/Server.ts",
 		"test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
 		"test:verbose": "jest --watch --verbose --passWithNoTests",
-		"test:unit": "yarn test -- --watch -c jest-unit-config.js",
-		"test:integration": "yarn test -- --watch -c jest-integration-config.js",
-		"test:staged": "yarn test -- --findRelatedTests",
-		"test:ci": "yarn test -- --coverage"
+		"test:unit": "yarn test as-is --watch -c jest-unit-config.js",
+		"test:integration": "yarn test as-is --watch -c jest-integration-config.js",
+		"test:staged": "yarn test as-is --findRelatedTests",
+		"test:ci": "yarn test as-is --coverage"
 	},
 	"dependencies": {
 		"bcrypt": "^5.1.0",
