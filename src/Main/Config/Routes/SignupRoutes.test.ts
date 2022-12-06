@@ -1,10 +1,11 @@
 import request from 'supertest';
 import { MongoHelper } from '../../../Infra/Db/Helpers/MongoHelper';
 import app from '../../Config/App';
+import env from '../env';
 
 describe('SingUp Routes', () => {
 	beforeAll(async () => {
-		process.env.MONGO_URL && (await MongoHelper.connect(process.env.MONGO_URL));
+		await MongoHelper.connect(env.mongoUrl);
 	});
 
 	afterAll(async () => {
@@ -12,7 +13,7 @@ describe('SingUp Routes', () => {
 	});
 
 	beforeEach(async () => {
-		const accountCollection = MongoHelper.getCollection('account');
+		const accountCollection = await MongoHelper.getCollection('account');
 		await accountCollection.deleteMany({});
 	});
 
