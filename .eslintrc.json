@@ -1,34 +1,39 @@
 {
   "env": {
-      "browser": true,
-      "es2021": true,
-      "jest": true
+    "browser": true,
+    "es2021": true,
+    "jest": true
   },
   "extends": [
-      "eslint:recommended",
-      "plugin:@typescript-eslint/recommended"
+    "eslint:recommended",
+    "prettier"
   ],
   "parserOptions": {
     "project": "./tsconfig.json",
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
+  "project": [
+    "/tsconfig.json"
+  ],
   "parser": "@typescript-eslint/parser",
   "rules": {
     "@typescript-eslint/no-explicit-any": "off",
     "indent": [
-        "error",
-        "tab",
-        {
-            "SwitchCase": 1,
-            "ignoredNodes": ["ConditionalExpression"]
-        }
+      "error",
+      "tab",
+      {
+        "SwitchCase": 1,
+        "ignoredNodes": [
+          "ConditionalExpression"
+        ]
+      }
     ],
     "linebreak-style": 0,
     "quotes": 0,
     "semi": [
-        "error",
-        "always"
+      "error",
+      "always"
     ],
     "no-unused-vars": 0
   }
