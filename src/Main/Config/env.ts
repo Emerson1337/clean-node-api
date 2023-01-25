@@ -1,4 +1,4 @@
 export default {
-	mongoUrl: 'mongodb://localhost:27017/clean-node-api',
+	mongoUrl: 'mongodb://mongo:mongo@localhost:27017/clean-node',
 	port: process.env.PORT || '3333',
 };
