@@ -4292,7 +4292,7 @@ mongodb-memory-server@8.9.3:
     mongodb-memory-server-core "8.9.3"
     tslib "^2.4.0"
 
-mongodb@*, mongodb@^4.11.0:
+mongodb@*:
   version "4.11.0"
   resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-4.11.0.tgz#d28fdc7509f24d0d274f456529441fa3e570415c"
   integrity sha512-9l9n4Nk2BYZzljW3vHah3Z0rfS5npKw6ktnkmFgTcnzaXH1DRm3pDl6VMHu84EVb1lzmSaJC4OzWZqTkB5i2wg==
